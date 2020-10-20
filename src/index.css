@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,9 +14,7 @@ code {
     monospace;
 }
 
-
 .app{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
+

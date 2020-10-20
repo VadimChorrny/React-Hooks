@@ -4,6 +4,7 @@ function App() {
 
     const [state, setState] = useState([])
     const [input, setInput] = useState('')
+    const [del, setDel] = useState('')
 
     function handleClick() {
         setState([...state, input])
@@ -12,8 +13,9 @@ function App() {
         setInput(event.target.value)
     }
 
+
     return (
-        <div>
+        <div className="app">
             <input value={input} onChange={handleInput} />
             <button onClick={handleClick} className="btn btn-success" > Добавить </button>
             {
