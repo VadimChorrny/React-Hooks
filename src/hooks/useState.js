@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function App() {
+function Use() {
 
     const [state, setState] = useState([])
     const [input, setInput] = useState('')
@@ -9,18 +9,17 @@ function App() {
         setState([...state, input])
     }
     function handleInput(event) {
-        setInput(event.target.value)
+        setInput(event.target.value);
     }
-
     return (
         <div>
             <input value={input} onChange={handleInput} />
-            <button onClick={handleClick} className="btn btn-success" > Добавить </button>
-            {
-                state.map((name, index) => <p key={index} >{name}</p>)
-            }
+            <button className="btn" onClick={handleClick}>Touch</button>
+            <div>
+                {state.map(function (el) { return <div>{el}</div> })}
+            </div>
         </div>
     )
 }
 
-export default App
+export default Use
